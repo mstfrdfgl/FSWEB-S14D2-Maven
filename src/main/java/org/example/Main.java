@@ -6,7 +6,7 @@ import org.example.model.enums.PaintColor;
 
 public class Main {
     public static void main(String[] args) {
-        Bedroom bedroom = new Bedroom("mustafa's bedroom",new Wall("east"),new Wall("west"),new Wall("north"),new Wall("south"),new Ceiling(3, PaintColor.WHITE),new Bed("comfort",3,1,1,1),new Lamp(LampType.LAVA,false,7),new Wardrobe(5,5,60.00),new Carpet(30,30,PaintColor.GREEN));
+        Bedroom bedroom=new Bedroom(new Wall("east"),new Wall("west"),new Wall("south"),new Wall("north"),new Ceiling(3,PaintColor.WHITE),new Lamp(LampType.LAVA,false,7),"mustafa's bedroom",new Bed("comfort",3,1,1,1),new Wardrobe(5,3,.80),new Carpet(40,40,PaintColor.GREEN));
         System.out.println(bedroom);
     }
 }
